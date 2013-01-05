@@ -70,13 +70,19 @@ section p a{
 }
 section.about{
   background-color:#9BCBD6;
-  border-bottom:10px solid #5F9BA8;
+  background-image: -webkit-linear-gradient(top, #9BCBD6, #5F9BA8);
+  background-image: -moz-linear-gradient(top, #9BCBD6, #5F9BA8);
+  background-image: -ms-linear-gradient(top, #9BCBD6, #5F9BA8);
+  background-image: -o-linear-gradient(top, #9BCBD6, #5F9BA8);
   color:#122212;
 }
 section.code{
   background-color:#787887;
   border-top:10px solid #898998;
-  border-bottom:10px solid #676776;
+  background-image: -webkit-linear-gradient(top, #787887, #676776);
+  background-image: -moz-linear-gradient(top, #787887, #676776);
+  background-image: -ms-linear-gradient(top, #787887, #676776);
+  background-image: -o-linear-gradient(top, #787887, #676776);
   color:#101001;
 }
 
@@ -87,7 +93,10 @@ section.author{
 
 section.talk{
   background-color:#A09A6D;
-  border-top:10px solid #6D652A;
+  background-image: -webkit-linear-gradient(top, #A09A6D, #6D652A);
+  background-image: -moz-linear-gradient(top, #A09A6D, #6D652A);
+  background-image: -ms-linear-gradient(top, #A09A6D, #6D652A);
+  background-image: -o-linear-gradient(top, #A09A6D, #6D652A);
   color:#dccdcd;
 }
 
