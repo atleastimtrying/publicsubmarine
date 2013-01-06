@@ -13,6 +13,7 @@ header{
   z-index:100;
   box-shadow:0 0 10px black;
   text-shadow:0 0 2px white;
+  opacity:0.8;
 }
 header h1{
 
@@ -33,7 +34,7 @@ header nav a{
 }
 header nav a.active,
 header nav a:hover{
-
+  font-weight:bold;
 }
 article{
 
@@ -52,17 +53,37 @@ section h3{
   margin-bottom:16px;
 }
 section h2 a{
-  padding-top: 126px;
+  padding-top: 146px;
   display: block;
 }
 section p{
   margin-bottom:16px;
+  max-width:600px;
 }
 section p a{
   text-decoration:none;
   font-weight:bold;
   color:inherit;
 }
+section code{
+  font-family:'Courier New', courier, monospace;
+  background:black;
+  padding:5px;
+  border-radius:4px;
+  color:lightgreen;
+  display:inline-block;
+  margin-bottom:16px;
+}
+
+section blockquote{
+  background:#ccc;
+  border-radius:4px;
+  max-width:600px;
+  padding:12px;
+  margin-left:-12px;
+  margin-bottom:12px;
+}
+
 section.about{
   background-color:#9BCBD6;
   background-image: -webkit-linear-gradient(top, #9BCBD6, #5F9BA8);
@@ -134,7 +155,7 @@ div.tabs nav a.active{
 
 div.tabs pre{
   background:rgba(0,0,0,0.6);
-  color:#cfc;
+  color:lightgreen;
   font-family:courier;
   padding:20px;
   width:auto;
