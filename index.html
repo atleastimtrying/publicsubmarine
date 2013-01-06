@@ -21,17 +21,39 @@
       <h2><a name="about">About</a></h2>
       <div>
         <h3>What is Public Submarine?</h3>
-        <p>Public Submarine is a very simple publish subcribe library that makes use of a global js object to handle all your custom events.</p>
+        <p>Public Submarine is a very simple publish subscribe library that makes use of a global JS object to handle all your custom events.</p>
+
         <h3>What is Pub Sub?</h3>
-        <p>Pub Sub (or the Observer pattern) is a way of decoupling your objects allowing them to become more independent.</p>
+        <p>Pub Sub (short for public subscribe)(or the Observer pattern) is the process of tying specific functions to an 'event', a way of decoupling your objects allowing them to become more independent. These events are a string that when triggered by the library for all the events associated with it. This is also known as the 'observer pattern' in the gang of four book</p>
+        <blockquote>
+            One or more observers are interested in the state of a subject and register their interest with the subject by attaching themselves. When something changes in our subject that the observer may be interested in, a notify message is sent which calls the update method in each observer. When the observer is no longer interested in the subject's state, they can simply detach themselves. 
+        </blockquote> 
+
         <h3>How do I use it?</h3>
-        <p>subscribe to an event: publicSubmarine.subscribe('an event', function(){console.log('event called')});</p>
-        <p>subscribe to an event: publicSubmarine.unsubscribe('an event', function(){console.log('event called')});</p>
-        <p>subscribe to an event: publicSubmarine.publish('an event');</p>
+        <p>Pub Sub is very simple to use, simply include the script tag pointing to our hosted version of Public Submarine or a local version downloaded from <a href='http://atleastimtrying.github.com/publicsubmarine/pubSub.js'>here</a>.</p> 
+        <code><pre><script src='pubSub.js'></script></pre></code>
+        <p>Once you've included this in your javascript use the following three functions.</p> 
+
+        <h4>subscribe to an event</h4>
+        <p>Simple call the subscribe function passing in the name of your event as your first parameter add your second parameter past the callback function that you wish to be triggered.</p>
+        <code>publicSubmarine.subscribe('an event', function(){console.log('event called')});</code>
+
+        <h4>Unsubscribe to an event</h4>
+        <p>To unsubscribe from an event pass in the name of your event for the first parameter and for the second parameter pass in the function (the same function) that you subscribe to the event with. It's at this point it becomes clear how useful naming your functions can be.</p>
+
+        <code>publicSubmarine.unsubscribe('an event', function(){console.log('event called')});</code>
+
+        <h4>Publish an event</h4>
+        <p>To publish your event is very simple just pass in the name of your event to the public function.</p>
+        <code>publicSubmarine.publish('an event');</code>
+
+        <p>That's all there is to it for the current version of Pub Sub. In the future I hope to be able to bind objects to an event that is published which will be received by the functions that are subscribed to it. Keepo an eye out for the next version of Public Submarine.</p>
       </div>
     </section>
     <section class='code'>
       <h2><a name="code">Code</a></h2>
+      <p>Public Submarine as written in CoffeeScript and compiled in to Javascript. If you're editing the code I would thoroughly recommend using CoffeeScript. However, any changes made to the Javascript will also be reflected.</p>
+      <p>P.S.Feel free to remove the ascii art :)</p>
       <div class='tabs'>
         <nav>
           <a href='#coffeescript' class='active'>CoffeeScript</a>
@@ -132,11 +154,11 @@ publicSubmarine.init()
     </section>
     <section class='author'>
       <h2><a name="author">Author</a></h2>
-      <p>Public Submarine was created and developed by <a href='http://andersfisher.com'>Anders Fisher</a>, a Javascript Contractor working in and around East Anglia.</p>
+      <p>Public Submarine was created and developed by <a href='http://andersfisher.com'>Anders Fisher</a>, a freelance Javascript Contractor working in and around East Anglia. Anders has been working for the last five years with a distinct focus on front end development. He is a big fan of the following technologies: coffeecript, query, rails, git, css3, hamill, sublime text 2 and Google Chrome. Anders is constantly pushing himself to create new personal projects alongside his work for prominent local businesses. Always keen to hear about new projects and ideas, Anders tries to make time for interesting and engaging - and most of all useful - projects on the web.</p>
     </section>
     <section class='talk'>
       <h2><a name="talk">Talk</a></h2>
-      <p>The slides for A recent talk on Pub Sub by Anders Fisher are available at <a href='http://pubsubtalk.herokuapp.com'>pubsubtalk.herokuapp.com</a>.
+      <p>Pub Sub was inspired by some research done for a talk done at Front End Suffolk, a browser based user group in Ipswich, Suffolk, East Anglia. The slides for this talk are available online via the <a href='http://fesuffolk.co.uk'>FESuffolk website</a>. You can contact or follow <a href="http://twitter.com/fesuffolk">@FESuffolk</a> on Twitter.
     </section>
   </article>
   <footer>
